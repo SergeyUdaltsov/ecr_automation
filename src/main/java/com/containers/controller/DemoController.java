@@ -6,11 +6,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/demo")
+@RequestMapping("/")
 @Slf4j
 public class DemoController {
 
-    @GetMapping("/test")
+    @GetMapping()
+    public String initial() {
+        return helloController();
+    }
+
+    @GetMapping("/demo/test")
     public String helloController() {
         String page = "<!DOCTYPE html>\n" +
                 "<html lang=\"en\">\n" +
@@ -20,7 +25,7 @@ public class DemoController {
                 "</head>\n" +
                 "<body>\n" +
                 "\n" +
-                "<h1>Hello world!!!</h1>\n" +
+                "<h1>Hello world!!! new</h1>\n" +
                 "  <script>\n" +
                 "  </script>\n" +
                 "</body>\n" +
