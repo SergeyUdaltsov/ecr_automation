@@ -3,7 +3,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: DockerFile
+      dockerfile: Dockerfile
     container_name: demo_app
     restart: always
     image: autochast_image_1
