@@ -6,6 +6,6 @@ services:
       dockerfile: Dockerfile
     container_name: demo_app
     restart: always
-    image: autochast_image_1
+    image: app_image
     ports:
-      - 3000:8080
+      - 8080:8080
